@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>We Champions</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <!--Header-->
+    <header>
+        <na>
+            <ul>
+                <li><a href="#name">Login</a></li>
+                <li><a href="#hobbies">Hobi</a>
+            </ul>
+       </nav>
+ </header>
+
+ <!--Form Daftar-->
+      <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"/>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Telepon</label>
+            <input type="text" name="telephone" id="telephone"/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" aria-describedby="additional_email_infomation"/>
+            <span id="additional_email_infomation" class="form-control-hint">For example, example@mail.com</span>
+        </div>
+        <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <input type="text" name="password" id="password">
+        </div>
+
+        <div class="form-group">
+            <button class="btn">Daftar</button>
+        </div>
+      </form>
+    
+      <main>
+        <!--Keterangan Waktu-->
+        <form>
+            <fieldset>
+                <legend>Waktu Mendaftar</legend>
+                <div class="form-group">
+                    <label for="deperatur_date">Masukan Tanggal dan Jam </label>
+                    <input type="datetime-local" name="deperatur_date" id="deperatur_date">
+                
+            </fieldset>
+            <fieldset>
+                <legend>Waktu Terdaftar</legend>
+                <div class="form-group">
+                    <label for="arrival_date">Jam</label>
+                    <input type="time" name="arrival_date" id="arrival_date">
+                </div>
+                <div class="form-group">
+                    <label for="arrival_date">Tanggal</label>
+                    <input type="date" name="arrival_date" id="arrival_date">
+                </div>
+            </fieldset>
+   
+            <!--Hobi-->
+    <div class="form-group">
+        <label for="hobbies">Hobi Anda!</label>
+        <select name="hobbies" id="hobbies" required>
+            <option value="" disabled selected>Pilih Sesuka Hati Kalian</option>
+            <option value="sport">Olahraga</option>
+            <option value="reading_book">Membaca Buku</option>
+            <option value="cooking">Memasak</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button class="btn">Kirim</button>
+    </div>
+    </form>
+  </main>
+</body>
